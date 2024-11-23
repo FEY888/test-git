@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'GmarketSansMedium';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -8,7 +9,6 @@
 html > body {
   font-family: 'GmarketSansMedium';
 }
-
 
 :root {
   --white-color: #fff;
@@ -18,7 +18,7 @@ html > body {
   --grey-drak-color: #909090;
   --grey-light-color: #e0e0e0;
 
-/* size */
+  /* size */
   --padding: 12px;
   --avatar-size: 36px;
 
@@ -27,10 +27,11 @@ html > body {
   --font-medium: 14px;
   --font-small: 12px;
   --font-micro: 10px;
-
 }
 
-body, ul, li{
+body,
+ul,
+li {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -39,7 +40,6 @@ body, ul, li{
 a {
   color: inherit;
   text-decoration: none;
-  
 }
 /* header */
 header {
@@ -49,7 +49,7 @@ header {
   background-color: var(--black-color);
   color: var(--white-color);
 
-  > .logo{
+  > .logo {
     font-size: var(--font-large);
 
     > i {
@@ -71,9 +71,12 @@ header .icons > .fa-solid {
   background-color: var(--black-color);
 
   > video {
-  width: 100%;
-  height: 100%;
-  max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -96,7 +99,7 @@ header .icons > .fa-solid {
 }
 
 .info > .metadata > .titleandbutton > .title {
-  font-size: var(--font-medium); 
+  font-size: var(--font-medium);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -120,13 +123,13 @@ header .icons > .fa-solid {
   margin: 12px 0;
 }
 
-.info .actions  button {
+.info .actions button {
   display: flex;
   flex-direction: column;
   font-size: var(--font-small);
 }
 
-.info .actions  button i {
+.info .actions button i {
   margin: 0 auto;
   padding-bottom: calc(var(--padding) / 2);
   font-size: 16px;
@@ -147,7 +150,7 @@ header .icons > .fa-solid {
 
 .channel > .metadata {
   display: flex;
-  align-items:  center;
+  align-items: center;
 }
 
 .channel .metadata img {
@@ -162,7 +165,7 @@ header .icons > .fa-solid {
 }
 
 .channel .metadata .info .name {
-  font-size: var(--font-medium); 
+  font-size: var(--font-medium);
 }
 
 .channel .metadata .info .subscribers {
@@ -185,5 +188,3 @@ header .icons > .fa-solid {
   font-size: var(--font-medium);
   color: var(--grey-drak-color);
 }
-
-
